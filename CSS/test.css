@@ -1,0 +1,481 @@
+/* Body logo */
+/* designing the logo in home body */
+.homebodylogo img{
+  height: 160px;
+  width: 160px;
+}
+
+/* positioning the logo before navbar */
+.homebodylogo{
+  position: absolute;
+  transform: translate(-50%, -10%);
+  left: 50%;
+}
+
+/* margin for logo before sticky navbar */
+.dhomebody{
+  margin-top: 120px;
+}
+
+/* Navigation bar in body */
+/* design the ul, li and a in navbarbody */
+.navbarbody{
+  background-color: rgb(201, 201, 201) !important;
+  border-top: rgb(201, 201, 201) solid 4px;
+  border-bottom: rgb(201, 201, 201) solid 4px;
+}
+
+.navbarbody li{
+  margin: 0px 0px 0px 0px !important;
+  font-size: 20px !important;
+}
+
+.navbarbody li:hover{
+  background-color: rgb(220, 220, 220);
+  box-shadow: inset 3px 3px 5px rgb(170, 170, 170);
+  border-radius: 5px;
+}
+
+.navbarbody li a{
+  color: black !important;
+  font-weight: 600;
+}
+
+/* History */
+/* make the background transparent in carousel */
+.hispart .fccard{
+  background: rgba(0, 0, 0, .2);
+}
+
+/* jump padding for History, What to do, How to get there, Where to stay and Getting around */
+#historyshrtct{
+  padding-top: 0px;
+}
+#eventshrtct{
+  padding-top: 50px;
+}
+
+#whattodoshrtct{
+  padding-top: 50px;
+}
+
+#howtogettheresshrtct{
+  padding-top: 50px;
+}
+
+#wheretostayshrtct{
+  padding-top: 50px;
+}
+
+#gettingaroundshrtct{
+  padding-top: 50px;
+}
+
+#faqshrtct{
+  padding-top: 50px;
+}
+
+/* carousel indicators adjust */
+.adjustcarousel{
+  bottom: 20%;
+}
+
+/* designing carousel items */
+.carouselparts div h5{
+  padding: 3px 0px 3px 9%;
+  margin: 15px 0px 15px 0px;
+  background-color: blue;
+  width: 25%;
+}
+
+.carouselparts div p{
+  padding: 5px 10% 0px 15%;
+}
+
+/* Shortcut to top button */
+/* shortcut to top icon*/
+.totop a i{
+  color: rgb(150, 150, 150);
+}
+
+.totop{
+  position: fixed;
+  top: 85%;
+  right: 30px;
+}
+
+.shrtop {
+  position: fixed;
+  top: 85%;
+  right: 30px;
+  z-index: 1;
+  transition: all .5s;
+}
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+.show {
+  opacity: 1;
+  left: 0;
+}
+
+/* Event */
+
+/* What to do */
+* What to do filter interest part */
+.filterint{
+  border-radius: 11px;
+  background: rgb(254, 254, 254);
+  box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+}
+
+.filterint h5{
+  border-bottom: black solid 3px;
+}
+
+.filterint .swim{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .sights{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .hik{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .camp{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .dive{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .raf{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .wte{
+  padding: 5px;
+}
+
+/* what to do filter img */
+.filterint .swim img{
+}
+
+.filterint .sights img{
+}
+
+.filterint .hik{
+}
+
+.filterint .camp{
+}
+
+.filterint .dive{
+}
+
+.filterint .raf{
+}
+
+.filterint .wte{
+}
+
+/* what to do cards*/
+.wtdrow1 .card{
+  width: 16rem;
+}
+
+.wtdrow2 .card{
+  width: 16rem;
+}
+
+.wtdrow3 .card{
+  width: 16rem;
+}
+
+/* How to get there */
+/* how to get there card 1 */
+.htgtc1 img{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: 100px;
+  width: 100px;
+}
+
+/* Getting around */
+/* getting around calculator */
+.gtaroundcalc hr{
+  height:2px;
+  border-width:0;
+  background-color:gray
+}
+
+.gtaroundcalc .outputfare{
+  border: black solid 1px;
+}
+
+.gtaroundcalc{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+/* designing the logo in home body */
+.homebodylogo img{
+  height: 160px;
+  width: 160px;
+}
+
+/* positioning the logo before navbar */
+.homebodylogo{
+  position: absolute;
+  transform: translate(-50%, -10%);
+  left: 50%;
+}
+
+/* margin for logo before sticky navbar */
+.dhomebody{
+  margin-top: 120px;
+}
+
+/* design the ul, li and a in navbarbody */
+.navbarbody{
+  background-color: rgb(201, 201, 201) !important;
+  border-top: rgb(201, 201, 201) solid 4px;
+  border-bottom: rgb(201, 201, 201) solid 4px;
+}
+
+.navbarbody li{
+  margin: 0px 0px 0px 0px !important;
+  font-size: 20px !important;
+}
+
+.navbarbody li:hover{
+  background-color: rgb(220, 220, 220);
+  box-shadow: inset 3px 3px 5px rgb(170, 170, 170);
+  border-radius: 5px;
+}
+
+.navbarbody li a{
+  color: black !important;
+  font-weight: 600;
+}
+
+/* make the background transparent in carousel */
+.hispart .fccard{
+  background: rgba(0, 0, 0, .2);
+}
+
+/* jump padding for History, What to do, How to get there, Where to stay and Getting around */
+#historyshrtct{
+  padding-top: 0px;
+}
+#eventshrtct{
+  padding-top: 50px;
+}
+
+#whattodoshrtct{
+  padding-top: 50px;
+}
+
+#howtogettheresshrtct{
+  padding-top: 50px;
+}
+
+#wheretostayshrtct{
+  padding-top: 50px;
+}
+
+#gettingaroundshrtct{
+  padding-top: 50px;
+}
+
+#faqshrtct{
+  padding-top: 50px;
+}
+
+/* carousel indicators adjust */
+.adjustcarousel{
+  bottom: 20%;
+}
+
+/* designing carousel items */
+.carouselparts div h5{
+  padding: 3px 0px 3px 9%;
+  margin: 15px 0px 15px 0px;
+  background-color: blue;
+  width: 25%;
+}
+
+.carouselparts div p{
+  padding: 5px 10% 0px 15%;
+}
+
+/* What to do filter interest part */
+.filterint{
+  border-radius: 11px;
+  background: rgb(254, 254, 254);
+  box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+}
+
+.filterint h5{
+  border-bottom: black solid 3px;
+}
+
+.filterint .swim{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .sights{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .hik{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .camp{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .dive{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .raf{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .wte{
+  padding: 5px;
+}
+
+/* what to do filter img */
+.filterint .swim img{
+}
+
+.filterint .sights img{
+}
+
+.filterint .hik{
+}
+
+.filterint .camp{
+}
+
+.filterint .dive{
+}
+
+.filterint .raf{
+}
+
+.filterint .wte{
+}
+
+/* what to do cards*/
+.wtdrow1 .card{
+  width: 16rem;
+}
+
+.wtdrow2 .card{
+  width: 16rem;
+}
+
+.wtdrow3 .card{
+  width: 16rem;
+}
+
+/* how to get there card 1 */
+.htgtc1 img{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  height: 100px;
+  width: 100px;
+}
+
+/* getting around calculator */
+.gtaroundcalc hr{
+  height:2px;
+  border-width:0;
+  background-color:gray
+}
+
+.gtaroundcalc .outputfare{
+  border: black solid 1px;
+}
+
+.gtaroundcalc{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+.gtaroundcalc input{
+  margin: 0px 0px 0px 0px;
+}
+
+/* shortcut to top icon*/
+.totop a i{
+  color: rgb(150, 150, 150);
+}
+
+.totop{
+  position: fixed;
+  top: 85%;
+  right: 30px;
+}
+
+.shrtop {
+  position: fixed;
+  top: 85%;
+  right: 30px;
+  z-index: 1;
+  transition: all .5s;
+}
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+.show {
+  opacity: 1;
+  left: 0;
+}

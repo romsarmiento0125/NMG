@@ -1,0 +1,343 @@
+/* Body logo */
+/* designing the logo in home body */
+body{
+  background-color: rgb(233, 232, 232);
+}
+
+.homebodylogo img{
+  height: 160px;
+  width: 160px;
+}
+
+/* positioning the logo before navbar */
+.homebodylogo{
+  background-color: white;
+}
+
+/* Navigation bar in body */
+.dhomebody li{
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+/* History */
+/* make the background transparent in carousel */
+.hispart .fccard{
+  background: rgba(0, 0, 0, .2);
+}
+
+/* jump padding for History, What to do, How to get there, Where to stay and Getting around */
+#historyshrtct{
+  padding-top: 0px;
+}
+#eventshrtct{
+  padding-top: 50px;
+}
+
+#whattodoshrtct{
+  padding-top: 50px;
+}
+
+#howtogettheresshrtct{
+  padding-top: 50px;
+}
+
+#wheretostayshrtct{
+  padding-top: 50px;
+}
+
+#gettingaroundshrtct{
+  padding-top: 50px;
+}
+
+#faqshrtct{
+  padding-top: 50px;
+}
+
+/* carousel indicators adjust */
+.adjustcarousel{
+  bottom: 20%;
+}
+
+/* designing carousel items */
+.carouselparts div h5{
+  padding: 3px 9vw 3px 9%;
+  margin: 15px 0px 15px 0px;
+  background-color: rgb(35, 36, 68);
+  width: fit-content;
+  color: white;
+}
+
+.carouselparts div p{
+  padding: 5px 10% 0px 15%;
+}
+
+/* Shortcut to top button */
+/* shortcut to top icon*/
+.totop a i{
+  color: rgb(150, 150, 150);
+}
+
+
+.shrtop {
+  position: fixed;
+  top: 85%;
+  z-index: 1;
+  transition: all .5s;
+}
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+.show {
+  opacity: 1;
+  left: 0;
+}
+
+/* Event */
+/* Events image sizing */
+.events img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Events row margin */
+.events .row{
+  margin: 10px 0px 0px 0px;
+}
+
+/* What to do */
+/* What to do filter interest part */
+.filterint{
+  border-radius: 11px;
+  background: rgb(254, 254, 254);
+  box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+}
+
+.filterint h5{
+  border-bottom: black solid 3px;
+}
+
+.filterint .swim{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .sights{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .camp{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .dive{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .raf{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .wte{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterint .hik{
+  padding: 5px;
+}
+
+/* what to do filter img */
+.filterint img{
+  width: 25%;
+  height: 43px;
+}
+
+/* what to do button */
+.filterint button{
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* what to do cards*/
+.wtdrow1 .card{
+  width: 17rem;
+  height: 496px;
+  color: white;
+  margin: 1px;
+}
+
+.wtdrow1 .card-body{
+  width: 100%;
+  height: 100%;
+}
+
+.wtdrow1 .cardimg img{
+  width: 50px;
+  height: 40px;
+  margin: 0px 10px 10px 0px;
+  margin-top: inherit;
+}
+
+.wtdrow1 .card .row img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 0px 15px;
+}
+
+
+
+
+/* How to get there */
+/* how to get there card 1 */
+.howtogetthere .car{
+  background-image: url(../Assets/Photos/Home/HowToGetThere/car.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.howtogetthere .taxi{
+  background-image: url(../Assets/Photos/Home/HowToGetThere/taxi.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.howtogetthere .bus{
+  background-image: url(../Assets/Photos/Home/HowToGetThere/bus.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.howtogetthere .card-body{
+  position: relative;
+}
+
+.howtogetthere .card-body .textpos{
+  position: absolute;
+  bottom: 7%;
+}
+
+.howtogetthere .card-body .textpos p{
+  color: white;
+}
+
+.howtogetthere .card-body .textpos h5{
+  color: white;
+}
+
+/* Where to stay */
+/* where to stay bgpicture */
+.carousel-indicators{
+  bottom: -3%;
+}
+.wheretostay .carousel-indicators > li{
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(23, 23, 23);
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+
+.birchdesc{
+  position: absolute;
+  left: 59%;
+  top: 0%;
+  width: 40%;
+  height: 100%;
+  text-align: left;
+}
+
+.birchdesc p{
+  font-size: 91%;
+}
+
+.wheretostay .carousel-control-prev{
+  z-index: 15;
+  bottom: -89%;
+  left: 36%;
+}
+.wheretostay .carousel-control-next{
+  z-index: 15;
+  bottom: -89%;
+  right: 36%;
+}
+
+/* Getting around */
+
+/* getting around calculator */
+/* tricycle calculator */
+.tryfare .trislider{
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, rgb(23, 21, 85) 0%,rgb(240, 240, 240) 0%);
+  width: 100%;
+  height: 16px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  outline: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px rgb(63, 63, 63);
+}
+
+.tryfare .trislider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(23, 21, 85);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tryfare .trislider::-moz-range-thumb{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(23, 21, 85);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* jeep calculator */
+.jeepfare .jeepslider{
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, rgb(23, 21, 85) 0%,rgb(240, 240, 240) 0%);
+  width: 100%;
+  height: 16px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  outline: none;
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px rgb(63, 63, 63);
+}
+
+.jeepfare .jeepslider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(23, 21, 85);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.jeepfare .jeepslider::-moz-range-thumb{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(23, 21, 85);
+  border-radius: 50%;
+  cursor: pointer;
+}

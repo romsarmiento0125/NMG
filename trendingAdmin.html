@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trending Admin</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Icons/css/all.min.css">
+  <link rel="stylesheet" href="CSS/headerfall.css">
+</head>
+<body>
+  <!-- section for the trending header -->
+  <section class="allheader container-fluid p-0 m-0" id="ttop">
+    <div class="headerbg">
+      <!-- header navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="Assets/LOGO and ICONS/logo/NMG.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="whattodoadmin.html">Home admin</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="trendingAdmin.html">Trending admin</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Services admin</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section>
+    <!-- Edit trending -->
+    <div class="modal" id="edittrend" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Trending text</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <h5>Rank: <span id="rankid"></span></h5>
+                <label>Name of the place</label>
+                <input type="text" class="form-control" id="name">
+                <label>Advertisement Line</label>
+                <input type="text" class="form-control" id="advertisement">
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" id="description" rows="4"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="edittrenddata()" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Change photo modal -->
+    <div class="modal" id="changephoto" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Change photo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="formimg">
+              <h5>Rank: <span id="rankidimg"></span></h5>
+              <div class="form-group">
+                <label>Photo</label>
+                <input type="file" name="image" accept="image/*" class="form-control-file" id="trendimage">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="edittrendimg()" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
+      <div class="">
+        <h2 class="my-3">Trending Admin</h2>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Rank:</th>
+              <th scope="col">Place_Name</th>
+              <th scope="col">Adline</th>
+              <th scope="col">Description</th>
+              <th scope="col">Photo</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="JS/trendA.js"></script>
+  <script type="text/javascript" src="JS/trend.js"></script>
+</body>
+</html>

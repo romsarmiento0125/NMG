@@ -1,0 +1,78 @@
+/* putting an image background in header */
+.headerbg{
+  background-image: url(../Assets/Photos/nmgBg.jpg);
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* changing the font size of header naviagation bar */
+.headerbg nav div ul li{
+  font-size: 20px;
+}
+
+/* to center the welcome intro in header */
+.headertxt{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* modifying the intro paragraph in header */
+.welcome{
+  font-size: 25px;
+}
+
+.norzagaray{
+  font-size: 82px;
+}
+
+.briefintro{
+  font-size: 16px;
+}
+
+/* to allign the button after the header intro */
+.headerbutton{
+  position: absolute;
+  top: 130%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+
+/* header a and button color */
+.headerbutton a{
+  background-color: rgb(17, 37, 45);
+  color: white;
+}
+
+.headerbutton a:hover{
+  background-color: white;
+  color:black;
+}
+
+.headerbutton button{
+  background-color: rgb(17, 37, 45);
+  color: white;
+}
+
+.headerbutton button:hover{
+  background-color: white;
+  color:black;
+}
+
+/* header navigation bar */
+.headerbg .navlist li{
+  margin-top: 5px;
+  padding-left: 16px !important;
+  font-weight: 600;
+}
+
+/* header logo */
+.headerbg a img{
+  width: 180px;
+  height: 35px;
+  margin: 10px 0px 0px 25px;
+}

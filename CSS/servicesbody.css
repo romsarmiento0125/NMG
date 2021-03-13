@@ -1,0 +1,124 @@
+/* top image */
+.servimg img{
+  width: 100%;
+}
+
+/* first column */
+.filterserv{
+  border-radius: 11px;
+  background: rgb(254, 254, 254);
+  box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+}
+.filterserv div{
+  margin-bottom: 10px;
+}
+
+.filterserv h5{
+  border-bottom: black solid 3px;
+}
+
+.filterserv .convi{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .phar{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .bank{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .gassta{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .policesta{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .hospi{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .publicmark{
+  padding: 5px;
+  border-bottom: rgb(40, 40, 40) solid 1px;
+}
+
+.filterserv .snacks{
+  padding: 5px;
+  margin-bottom: 35%;
+}
+
+.filterserv img{
+  width: 40px;
+  height: 35px;
+}
+
+.filterserv button{
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* second column */
+
+.serrow1 .card{
+  width: 17.8rem;
+  height: 496px;
+  color: white;
+}
+
+.serrow2 .card{
+  width: 17.8rem;
+  height: 496px;
+  color: white;
+  
+}
+
+.serrow3 .card{
+  width: 17.8rem;
+  height: 496px;
+  color: white;
+}
+
+.serrow1 .card .row{
+  margin-top: 140%;
+}
+
+.serrow2 .card .row{
+  margin-top: 140%;
+}
+
+.serrow3 .card .row{
+  margin-top: 140%;
+}
+
+.serrow1 .card .row img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 0px 15px;
+}
+
+.serrow2 .card .row img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 0px 15px;
+}
+
+.serrow3 .card .row img{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px 0px 15px;
+}

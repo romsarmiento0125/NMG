@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What To Do Admin</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Icons/css/all.min.css">
+  <link rel="stylesheet" href="CSS/headerfall.css">
+</head>
+<body>
+  <!-- section for the trending header -->
+  <section class="allheader container-fluid p-0 m-0" id="ttop">
+    <div class="headerbg">
+      <!-- header navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="Assets/LOGO and ICONS/logo/NMG.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="whattodoadmin.html">Home admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trendingAdmin.html">Trending admin</a>
+            </li>
+            <li>
+              <a class="nav-link" href="">Services admin</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Add place -->
+  <div class="modal" id="editwtd" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add place</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="wtdform" enctype="multipart/form-data">
+            <h5><span id="mwtdplacename">Swimming</span></h5>
+            <div class="form-group">
+              <label>Name of the place</label>
+              <input type="text" class="form-control" id="wtdname" name="wtdnamenm"/>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <input type="text" class="form-control" id="wtddescrip" name="wtddescripnm"/>
+            </div>
+            <div class="form-group">
+              <label>Longtitude</label>
+              <input type="text" class="form-control" id="wtdlong" name="wtdlongnm"/>
+            </div>
+            <div class="form-group">
+              <label>Latitude</label>
+              <input type="text" class="form-control" id="wtdlat" name="wtdlatnm"/>
+            </div>
+            <div class="form-group">
+                <label for="file">Photo</label>
+                <input type="file" class="form-control-file" accept="image/*" id="wtdphoto" name="wtdphotonm"/>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" onclick="wtdadd()" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <!-- Edit What to do -->
+    <div class="modal" id="editwtddata" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">What To Do text</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <h5><span id="wtdfilter"></span></h5>
+                <h5>#: <span id="rankid"></span></h5>
+                <label>Name of the place</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" id="description" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Longtitude</label>
+                <input type="text" class="form-control" id="longti">
+                <label>Latitude</label>
+                <input type="text" class="form-control" id="lati">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="wtdupdatedata()" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Change photo modal -->
+    <div class="modal" id="changewtdphoto" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Change photo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="formimg" enctype="multipart/form-data">
+              <h5><span id="wtdimgfilter"></span></h5>
+              <h5>#: <span id="rankidimg"></span></h5>
+              <div class="form-group">
+                <label>Photo</label>
+                <input type="file" name="image" accept="image/*" class="form-control-file" id="trendimage">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="wtdupdatephoto()" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delete Data -->
+    <div class="modal" id="deletedata" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="formimg" enctype="multipart/form-data">
+              <h5><span id="wtddelfilter"></span></h5>
+              <h5>#: <span id="rankiddel"></span></h5>
+              <h5>Name of place: <span id="wtddelnop"></span></h5>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" onclick="wtddeletedata()" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
+      <div class="">
+        <h2 class="my-3">What to do Admin</h2>
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-success my-3" type="submit" data-toggle='modal' data-target="#editwtd">Add Place</button>
+          </div>
+          <div class="col-6">
+            <div class="d-flex justify-content-end">
+              <div class="btn-group dropleft my-3 mr-2">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span id="wtdplacename">Swimming</span>
+                </button>
+                <div class="dropdown-menu">
+                  <button class="dropdown-item" type="button" onclick="wtdswimnamechange()">Swimming</button>
+                  <button class="dropdown-item" type="button" onclick="wtdsightnamechange()">Sightseeing</button>
+                  <button class="dropdown-item" type="button">Camping</button>
+                  <button class="dropdown-item" type="button">Diving</button>
+                  <button class="dropdown-item" type="button">Ride at Floatie</button>
+                  <button class="dropdown-item" type="button">Eat</button>
+                  <button class="dropdown-item" type="button">Hiking</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Place_Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Longtitude</th>
+              <th scope="col">Latitude</th>
+              <th scope="col">Photo</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableid">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="JS/whatodoA.js"></script>
+</body>
+</html>

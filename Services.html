@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/headerfall.css">
+  <link rel="stylesheet" href="CSS/footerall.css">
+  <link rel="stylesheet" href="CSS/servicesbody.css">
+</head>
+<body>
+  <!-- section for the trending header -->
+  <section class="allheader container-fluid p-0 m-0">
+    <div class="headerbg">
+      <!-- header navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="Assets/LOGO and ICONS/logo/NMG.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="Trending.html">Trending</a>
+            </li>
+            <li>
+              <a class="nav-link" href="Explore.html">Explore</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <div class="servimg container-fluid">
+    <div class="row">
+      <img src="Assets/Photos/LIghting.png" alt="">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="m-5">Services</h1>
+    <div class="row">
+      <div class="col-3">
+        <div class="filterserv" style="width: 15rem;">
+          <h5 class="text-center p-2">Filter Interest</h5>
+          <div class="convi">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/conve.png" alt="">
+            <button type="button" onclick="consto()">Convenience Store</button>
+          </div>
+          <div class="phar">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/Drug.png" alt="">
+            <button type="button" onclick="pharma()">Pharmacy</button>
+          </div>
+          <div class="bank">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/card.png" alt="">
+            <button type="button" onclick="bank()">Bank</button>
+          </div>
+          <div class="gassta">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/gas.png" alt="">
+            <button type="button" onclick="gasStation()">Gas Station</button>
+          </div>
+          <div class="policesta">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/police.png" alt="">
+            <button type="button" onclick="policeStation()">Police Station</button>
+          </div>
+          <div class="hospi">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/hospital.png" alt="">
+            <button type="button" onclick="hospi()">Hospital</button>
+          </div>
+          <div class="publicmark">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/market.png" alt="">
+            <button type="button" onclick="publicMarket()">Public Market</button>
+          </div>
+          <div class="snacks">
+            <img src="Assets/LOGO and ICONS/ServiceIcon/snaks.png" alt="">
+            <button type="button" onclick="snacks()">Snacks</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-9">
+        <!-- First row -->
+        <div class="serrow1 row d-flex justify-content-center" id="rowid1">
+          <div class="card" style="background-image: url(Assets/Photos/Services/CovenienceStore/1.png); background-repeat: no-repeat;">
+            <div class="card-body">
+              <div class="row">
+                <img src="Assets/LOGO and ICONS/Icon for Location/loc white.png" alt="">
+                <h5 class="card-title">Alfamart</h5>
+              </div>
+              <span>Poblacion</span>
+              <form action="Explore.html" method="GET">
+                <button class="btn btn-primary" type="submit" name="aval" value="">Go There</button>
+              </form>
+            </div>
+          </div>
+          <div class="card" style="background-image: url(Assets/Photos/Services/CovenienceStore/2.png); background-repeat: no-repeat;">
+            <div class="card-body">
+              <div class="row">
+                <img src="Assets/LOGO and ICONS/Icon for Location/loc white.png" alt="">
+                <h5 class="card-title">Alfamart</h5>
+              </div>
+              <span>Poblacion</span>
+              <form action="Explore.html" method="GET">
+                <button class="btn btn-primary" type="submit" name="aval" value="">Go There</button>
+              </form>
+            </div>
+          </div>
+          <div class="card" style="background-image: url(Assets/Photos/Services/CovenienceStore/3.png); background-repeat: no-repeat;">
+            <div class="card-body">
+              <div class="row">
+                <img src="Assets/LOGO and ICONS/Icon for Location/loc white.png" alt="">
+                <h5 class="card-title">7 Eleven</h5>
+              </div>
+              <span>Poblacion</span>
+              <form action="Explore.html" method="GET">
+                <button class="btn btn-primary" type="submit" name="aval" value="">Go There</button>     
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second row -->
+        <div class="serrow2 row d-flex justify-content-center" id="rowid2">
+        </div>
+
+        <!-- Third row -->
+        <div class="serrow3 row d-flex justify-content-center" id="rowid3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- footer section -->
+  <section class="footer container-fluid">
+    <div class="allfooter container">
+      <p class="foothead">About Norzagaray Municipal Guide</p>
+      <div class="row">
+        <div class="col-12 col-sm-7">
+          <p class="footdesc">Norzagaray municipality guide is made to help both locals and tourists. It contains guides and information of different tourist spot, famous cuisine and activities. Norzaray municipality guide also offer detailed map to guide you to your destination, it is available both online and offline by downloading it. Lastly, it let you create hotel reservation for your stay for comfortable and longer stay. Norzagaray Municipality Guide provide it all for your enjoyable and exciting vacation.</p>
+        </div>
+      </div>
+      <div class="row">
+        <p class="footercred text-sm-center">© NORZAGARAY MUNICIPAL Guide.com.All rights reserve 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- js link for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="JS/service.js"></script>
+</body>
+</html>
